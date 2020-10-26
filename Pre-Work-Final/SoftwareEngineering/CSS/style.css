@@ -1,0 +1,128 @@
+style.css
+
+		html {
+			box-sizing: border-box
+			}
+			*, *::before, *::after {
+				box-sizing: inherit
+			}
+
+
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		*{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		nav {position: fixed; top: 0; left: 0; width: 100%; background-color: pink; border: double 5px green;}
+
+			.box-h1-yellow {
+				width: 90%;
+				height: auto;
+				background-color: yellow;
+				margin: 30px auto 10px auto;
+				border: double; color: purple;
+			}
+
+			.box-h2-red {
+				width: 90%;
+				height: auto;
+				background-color: red;
+				margin: 10px auto;
+				border: double; color: purple;
+				font-size: 50px;
+			}
+
+			.box-h3-orange {
+				width: 90%;
+				height: auto;
+				background-color: orange;
+				margin: 10px auto;
+				border: double; color: purple;
+			}
+
+			.box-p1-yellow {
+				width: 90%;
+				height: auto;
+				background-color: yellow;
+				margin: 10px auto;
+				border: double; color: purple;
+			}
+
+			.box-p2-red {
+				width: 90%;
+				height: auto;
+				background-color: red;
+				margin: 10px auto;
+				border: double; color: purple;
+			}
+
+			.box-p3-orange {
+			width: 90%;
+				height: auto;
+				background-color: orange;
+				margin: 10px auto;
+				border: double; color: purple;	
+			}
+			
+
+
+
+
+
+
+
+			#div1 {background-color: blue;}
+			#div2 {background-color: yellow}
+			#div3 {background-color: green}
+			#div4 {background-color: gray}
+			#div1, #div2, #div3, #div4 {border: double; color: purple;}
+
+			table {
+				margin-left: auto; 
+				margin-right: auto; 
+				width: 50%; 
+				border: solid 1px green;
+			}
+			th {text-align: center; color: green;}
+			tr{color: green; text-align: center;}
+			td{color: green; text-align: center; padding: 0 5px 5px 5px;}
+
+			img.tux50 {
+				height: 10%;
+				width: 10%;
+			}
+
+			.form{padding: 15px;
+				background-color: darkgray; position: absolute;
+				width: 50%;
+				text-align: center;
+			}
+
+			
+			.inline-block {display: inline-block; min-width: 100px; text-align: right;}
+
+			input[type=text]:hover {
+				background-color: yellow;
+			}
+			input[type=text]:focus {
+				background-color: lightgreen;
+				color: black;				
+			}
+
+			input[type=button] {
+				border: solid;
+				color: green;
+				font-weight: bold;
+				background-color: yellow;
+				padding: 5px;
+			}
+			input[type=button]:hover {
+				background-color: lightgreen;
+			}
