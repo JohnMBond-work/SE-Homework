@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="./CSS/style.css">
 		<title>John Bond</title>
 	</head>
 
-	<style type="text/css">
-		body{background-color: black;
-			color: green;
-			text-align: center;}
-
-			h2{color: red;
-				font-size: 50px}
-			h3{color: yellow;}
-			p{font-weight: bold; font-size: 150%;}
-			ul{font-style: oblique;}
-			tr{color: green;}
-			th{color: green;}
-			td{color: green;}
-
-			img.tux50 {
-				height: 10%;
-				width: 10%;
-			}
-
-	</style>
-
-	<body>
-		<h2>Hi!  My name is <u>Bond, John Bond!</u></h2>
-
-		<h3>Welcome to my webpage!</h3>
-		
-		<p>
-		This is my first website.  I am doing this as a sample website for my Software Engineering class at Per Scholas in 2020.  I am attending the Per Scholas Software Engineering course as a way to change my career from Aerospace Quality Engineering to Software Engineering due to the effects of the Corona19 Virus' on the Airline Industry.
-		<br>
-		I am an avid user of Linux, specifically Slackware Linux.  I have used many different distrobutions of Linux and am very familiar with them.
-		<br>
-		I am a devout Christian, but am very open to other religious aspects.
-		<br>
-		I also am facinated by Science.  I believe that religion and science are after the same end...truth and enlightenment.
-		</p>
+	
+	<body style="text-align: center; background-color: black; color: green;">
 
 		<nav>
-			<a href="../html/More about me.html" target="blank">More about me!  :)</a>
+			<a href="./pages/More about me.html" target="blank">More about me!</a>
 		</nav>
+
+	<div class="box-h1-yellow">	
+		<h1>Intro:</h1>
+	</div>
+
+	<div class="box-h2-red">
+		<h2>Hi!  My name is <u>Bond, John Bond!</u></h2>
+	</div>
+
+	<div class="box-h3-orange">
+		<h3>Welcome to my webpage!</h3>
+	</div>
+
+		<div class="box-p1-yellow" ">
+			<p>
+			This is the first webpage I developed by hand.  I am doing this as a sample website for my Software Engineering class at Per Scholas in 2020.  I am attending the Per Scholas Software Engineering course as a way to change my career from Aerospace Quality Engineering to Software Engineering due to the effects of the Corona19 Virus' on the Airline Industry.
+			</p>
+			<br>
+		</div>
+
+		<div class="box-p2-red">
+			<p>I am an avid user of Linux, specifically Slackware Linux.  I have used many different distrobutions of Linux and am very familiar with them.
+			</p>
+			<br>
+		</div>
+
+		<div class="box-p3-orange">	
+			<p>I am a devout Christian, but am very open to other religious aspects.
+			</p>
+			<br>
+		</div>
+
+		<div id="div3">	
+			<p id="orange-para3">I also am facinated by Science.  I believe that religion and science are after the same end...truth and enlightenment.
+			</p>
+		</div>
 		<br>
 
 		<a href="http://www.slackware.com/" target=_blank><img class="tux50" src="http://www.slackware.com/~msimons/slackware/grfx/shared/SWtuxgnu.png" frameborder="10"><br>Slackware Linux</a>
-		
 		<br>
-		<p>My Interests</p>
-		<ul style="list-style-type: none;">
-			<li> <a href="http://www.lds.org" target="blank">Religion</a></li>
-			<li> <a href="https://en.wikipedia.org/wiki/Linux" target="blank">Linux</a></li>
-			<li> <a href="http://www.sciencemag.org" target="blank">Science</a></li>
-		</ul>
 
-		<table style="margin-left: auto; margin-right: auto;" width="50%" border= solid>
-			<tr>
-				<th> Religion</th>
-				<th> Linux</th>
-				<th> Science</th>
-			</tr>
-			<tr>
-				<td> <a href="http://www.lds.org" target="blank">www.lds.org</a></td>
-				<td> <a href="https://en.wikipedia.org/wiki/Linux" target="blank">en.wikipedia.org/wiki/Linux</a></td>
-				<td> <a href="http://www.sciencemag.org" target="blank">www.sciencemag.org</a></td>
-			</tr>
-		</table>
+		<div id="div4">
+			<p>My Interests:</p>
+			<ul style="list-style-type: none; font-style: oblique; text-align: center;">
+				<li> <a href="http://www.lds.org" target="blank">Religion</a></li>
+				<li> <a href="https://en.wikipedia.org/wiki/Linux" target="blank">Linux</a></li>
+				<li> <a href="http://www.sciencemag.org" target="blank">Science</a></li>
+			</ul>
+		</div>
+
+			<table border="1">
+				<tr>
+					<th> Religion</th>
+					<th> Linux</th>
+					<th> Science</th>
+				</tr>
+				<tr>
+					<td> <a href="http://www.lds.org" target="blank">www.lds.org</a></td>
+					<td> <a href="https://en.wikipedia.org/wiki/Linux" target="blank">en.wikipedia.org/wiki/Linux</a></td>
+					<td> <a href="http://www.sciencemag.org" target="blank">www.sciencemag.org</a></td>
+				</tr>
+			</table>
 
 		<br><br>
-		<p>Just a little something that is a little insightful, a little fascinating, and a little entertaining!</p>
 
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/6avJHaC3C2U" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>Just a little something that is a little insightful, a little fascinating, and a little entertaining!</p>
+			<br>
+
+		<iframe width="560" height="315" max-width="45%" src="https://www.youtube.com/embed/6avJHaC3C2U" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; margin-left: 50px;"></iframe>
+
+		<div class="form">
+			<form>
+				<h3>If you are interested in any of my interests, feel free to leave your contact information in the form below:</h3>
+			<div class="inline-block">
+				First Name:
+			</div>
+				<input type="text" name="firstname"> <br>
+			<div class="inline-block">
+				Last Name:
+			</div>
+				<input type="text" name="lastname"> <br>
+			<div class="inline-block">
+				Email Address:
+			</div>
+				<input type="text" name="emailaddress"> <br><br>
+
+			<div style="text-align: center;">
+	    		<div style="display: inline-block; text-align: left;">
+				Interested In: <br><br>
+				<input type="radio" name="interest" value="Religion">
+				Religion <br>
+				<input type="radio" name="interest" value="Linux">
+				Linux <br>
+				<input type="radio" name="interest" value="Science">
+				Science <br><br>
+				<input type="button" name="submit" value="Submit">
+				</div>
+
+			</div>
+			<br><br>
+
+			</form>
+		</div>
 
 	</body>
 </html>
