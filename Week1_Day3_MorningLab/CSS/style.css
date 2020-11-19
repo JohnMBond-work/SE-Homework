@@ -1,0 +1,49 @@
+
+
+.double-hover{
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 30%;
+  grid-template-rows: 30px 30px;
+  grid-gap: 25px 15px;
+  
+}
+
+#first-hover {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  transition: width 1s ease-in-out 0s;
+}
+#first-hover:hover {
+  width: 150px;
+}
+
+
+#second-hover {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  transition: width 1s ease-in-out 0s;
+}
+
+#second-hover:hover {
+  width: 150px;
+}
+
+/*
+			@keyframes second-hover {
+				0%{
+					background-color: red;
+					width: 100px;
+				}
+				100%{
+					background-color: red;
+					width: 300px;
+				}
+
+				0%{
+					background-color: red;
+					width: 100px;
+				}
+			}
