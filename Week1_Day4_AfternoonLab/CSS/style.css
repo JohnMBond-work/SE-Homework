@@ -1,0 +1,34 @@
+.parent {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30px;
+  grid-gap: 10px 15px;
+  border: solid red;
+}
+
+.child {
+  border: solid yellow;
+}
+
+.Logo {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  border: solid green;
+}
+
+.grand-child {
+  display: grid;
+  border: solid purple;
+}
+
+.Header {
+  border: solid green;
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+.Footer {
+  border: solid green;
+  grid-column: 1/4;
+}
