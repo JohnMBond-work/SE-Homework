@@ -1,13 +1,13 @@
 //The four different types of loops
 
-//for loop
+//for loop=====================
 
 for(i=1; i<=10; i++){
      console.log(i);
  }
 console.log("===============")
 
-//while Loop
+//while Loop====================
 
 var i=1;
 while(i<=10){
@@ -16,7 +16,7 @@ while(i<=10){
 }
 console.log("===============")
 
-//do while Loop
+//do while Loop===========================
 
 var i=1;
 do {
@@ -26,7 +26,7 @@ do {
 while(i<=10);
 console.log("===============")
 
-//foreach or forin loop
+//foreach or forin loop====================
 
 var sub = [1,2,3];
 for(i in sub)
