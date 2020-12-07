@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Title</title>
+</head>
+
+<body>
+  <div>
+    <input id='a' type="text" name="" value="">
+    <input id='b' type="text" name="" value="">
+    <input id='sum' type="text" name="" value="">
+    <p id='sum1'></p>
+    <input type="button" name="" value="sum" onclick="sum()">
+  </div>
+
+</body>
+
+<script type="text/javascript">
+  function sum(){
+    var a = Number(docuemnt.getElementById('a').value);
+    var b = Number(docuemnt.getElementById('b').value);
+    var sum = a+b;
+    alert(sum);
+    console.log(a + "" + b);
+    document.getElementById('sum').value = sum;
+    document.getElementById('sum1').innerHTML = sum;
+
+    
+  }
+</script>
+
+</html>

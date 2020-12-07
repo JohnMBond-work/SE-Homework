@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Create a page w/ a title & 3 headings (give them a unique ID)-->
+<html>
+<head>
+  <title>Exercise</title>
+</head>
+
+<body>
+
+  <h1 id="Heading1">"This Heading1 is what it is."</h1>
+  <h2 id="Heading2">"This Heading2 is what it is."</h2>
+  <h3 id="Heading3">"This Heading3 is what it is."</h3>
+
+  <p>Chang in Headings will not change this paragraph text.</p>
+
+<!-- Heading1 script -->
+    <button onclick="DisplayHeading1()">Display</button>
+    <button onclick="HideHeading1()">Hide</button>
+    <button onclick="ResizeHeading1()">Resize</button>
+
+    <script>
+      function DisplayHeading1() {
+      document.getElementById("Heading1").style.display='block';
+      }
+      function HideHeading1() {
+      document.getElementById("Heading1").style.display='none';
+      }
+      function ResizeHeading1() {
+      document.getElementById("Heading1").style.fontSize='70px';
+      }
+    </script>
+
+<!-- Heading2 script -->
+    <button onclick="changeHeading2()">Change Heading2</button>
+
+    <script>
+      function changeHeading2() {
+      document.getElementById("Heading2").innerHTML="This Heading2 is now changed.";
+      }
+    </script>
+
+<!-- Heading3 script -->
+    <button onclick="changeHeading3()">Change Heading3</button>
+
+    <script>
+      function changeHeading3() {
+      document.getElementById("Heading3").innerHTML="This Heading3 is now changed.";
+      }
+    </script>
+
+    <!-- <button onclick="resetDisplay()">Reset</button>
+
+    <script>
+
+      <function resetDisplay(){
+        document.getElementById(resetDisplay).style.display='block';
+        document.getElementById(resetDisplay).style.fontSize='20px';
+      }
+    </script> -->
+
+
+</body>
+</html>
+
+
+
+
+<!--onmouseover="document.getElementById('welcome').style.color='red'-->

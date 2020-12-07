@@ -113,11 +113,11 @@
 // console.log (findLongestWord("I struggle with coding from time to time")); //provides input to the parent function on line 102
 
 
-// 8. filterLongWords==================================================
-
-// let i = 6 // i assigned value sets filter in function "word"
-// var arrayInput = ["I","struggle","with","coding","from","time","to","time"];
-// var arrayCleaned = arrayInput.filter( function( word ) {
-//   return word.length >= i;
-// });
-// console.log(arrayCleaned);
+// // 8. filterLongWords==================================================
+//
+// let i = 6 // i assigned value sets filter limit in function "word"
+// var arrayInput = ["I","struggle","with","coding","from","time","to","time"]; //created varieable named arrayInput and assigned it words as the input source
+// var arrayCleaned = arrayInput.filter( function( filterLongWords ) {
+//   return filterLongWords.length >= i;
+// }); //created variable arrayCleaned to .filter the variable arrayInput from line 119, into a function named filterLongWords which returns any words in arrayInput from line 119 that are greater or equal to the length assigned to i in line 118, changing the value of arrayCleaned on line 120
+// console.log(arrayCleaned); //prints the value of arrayCleaned from line 120

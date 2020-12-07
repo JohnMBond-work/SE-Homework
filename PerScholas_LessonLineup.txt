@@ -1,0 +1,18 @@
+
+
+
+Week One Labs:
+Day 2 Morning & Afternoon
+Day 3 Morning & Afternoon
+Day 4 Morning & Afternoon
+Week Two Labs:
+Day 1 Morning & Afternoon
+Day 2 Morning & Afternoon
+Day 3 Morning
+
+
+Homework:
+Week 1 HW 1: Flexbox Froggy
+Week 1 HW 2: Javascript
+Week 2 HW 1: Conditionals
+Week 2 HW 2: Functions
