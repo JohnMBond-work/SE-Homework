@@ -20,7 +20,7 @@ console.log(str);
 
 //Split
 //str.split([seperator[, limit]])
-console.log(str.split("e",4) str.split("c",4))
+console.log(str.split("e",4))
 
 console.log(arr);
 console.log(str);
