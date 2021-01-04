@@ -1,5 +1,7 @@
+//Mod-1_Space_Battle
 
-// Math Logic for Alien Ship variables
+
+// Math Logic for Alien Ship variables when the ships are initially created.
 class Ship {
   constructor() {
     this.hull = Math.floor(Math.random() * 4) + 3;
@@ -7,7 +9,7 @@ class Ship {
     this.accuracy = (Math.floor(Math.random() * 3) + 6) / 10;
   }
 
-  // Create an attack function, which generates a random number between 0 and 1 (Math.random()) and check it against ships accuracy. if the number is <= accuracy, the attack succeeds, otherwise it fails. --- done
+  // Create an attack function, which generates a random number between 0 and 1 (Math.random()) and check it against ships accuracy. if the number is <= accuracy, the attack succeeds, otherwise it fails.  Ask Salah if should be <= or >=.  Seems like a higher number would translate to successful attack.
   attack() {
     const chance = Math.random().toFixed(1);
     console.log("You're being attacked by the alien ship!")
@@ -24,7 +26,7 @@ class Ship {
 
 }
 
-// USS Shwarzenegger variables
+// USS Shwarzenegger variables and battle variables
 var my_ship = {
   name: 'USS Shwarzenegger',
   hull: 20,
@@ -47,6 +49,7 @@ var my_ship = {
   }
 }
 
+// Alien ships variables and battle variables
 var aliens = []
 
 // Future feature: prompt user to play again, ask for number of ships to face, call this function with that number.
@@ -85,7 +88,7 @@ function startGame() {
       aliens[0].attack();
     }
   }
-// End of game popup message possibilities
+// End of game popup message outcome possibilities
   if (aliens.length == 0) {
     alert('The USS Shwarzenegger has successfully destroyed all of the alien ships! Congratulations!')
     console.log("The USS Shwarzenegger has successfully destroyed all of the alien ships! Congratulations!");
