@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+Go to http://dummy.restapiexample.com/ (Links to an external site.)
+
+
+
+
+Identify all the HTTP methods for this API
+Post, Get, Put, Patch, Delete
+
+
+
+Identify the differences in their URLs
+Keywords at the end of each URL identify the Method, and those regarding specific records have the ID# added at the end.
+
+
+
+What are different types of Web Services?
+SOAP and REST.
+
+
+
+What are disadvantages of SOAP Web Services?
+Only XML can be used, JSON and other lightweight formats are not supported.
+SOAP is based on the contract, so there is a tight coupling between client and server applications.
+SOAP is slow because payload is large for a simple string message, since it uses XML format.
+Anytime there is change in the server side contract, client stub classes need to be generated again.
+Can’t be tested easily in browser
+Only XML can be used, JSON and other lightweight formats are not supported.
+SOAP is based on the contract, so there is a tight coupling between client and server applications.
+SOAP is slow because payload is large for a simple string message, since it uses XML format.
+Anytime there is change in the server side contract, client stub classes need to be generated again.
+Can’t be tested easily in browser
+
+
+
+
+What are disadvantages of REST web services?
+You can lose the ability to maintain state in REST, such as within sessions. It can also be more difficult for newer developers to use. It's important to understand what makes a REST API RESTful, and why these constraints exist before building your API.
+- Since there is no contract defined between service and client, it has to be communicated through other means such as documentation or emails.
+- Since it works on HTTP, there can't be asynchronous calls.
+- Sessions can't be maintained.
+
+
+
+What are different HTTP Methods supported in Restful Web Services?
+POST, GET, PUT, PATCH, and DELETE (also OPTIONS and HEAD)
+
+
+
+What is JAX-RS API?
+JAX-RS stands for JAVA API for RESTful Web Services.
+
+
+
+Create a URI for the different Http Verbs for a School.
+GET for list of students:
+http://dummy.schoolofhardknocks.com/api/v1/student
+GET data on student ID#1:
+http://dummy.schoolofhardknocks.com/api/v1/student/1
+POST student data (undefined in this example):
+http://dummy.schoolofhardknocks.com/api/v1/create
+PUT additional data for student ID#21:
+http://dummy.schoolofhardknocks.com/api/v1/update/21
+DELETE student ID#2:
+http://dummy.schoolofhardknocks.com/api/v1/delete/2

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Area of a Shape</title>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <script src="./JS/script.js"></script>
+</head>
+
+<body>
+  <form action="javascript:calculateArea()" onchange="javascript:updateForm()">
+
+    <label for="id_shapes">Select a shape</label>
+    <select id="id_shapes">
+      <option value="circle" selected>Circle</option>
+      <option value="triangle">Triangle</option>
+      <option value="square">Square</option>
+      <option value="rectangle">Rectangle</option>
+    </select>
+
+    <br><br>
+
+    <div id="id_inputs_circle">
+      <label for="id_radius">Radius</label>
+      <input id="id_radius" type="number" min="0" step="any">
+      <h2><em>A = &Pi;r<sup>2</sup></em></h2>
+    </div>
+
+    <div id="id_inputs_triangle" hidden>
+      <label for="id_base">Base</label>
+      <input id="id_base" type="number" min="0" step="any">
+      <label for="id_height">Height</label>
+      <input id="id_height" type="number" min="0" step="any">
+      <h2><em>A = <sup>bh</sup>&frasl;<sub>2</sub></em></h2>
+    </div>
+
+    <div id="id_inputs_square" hidden>
+      <label for="id_side">Side</label>
+      <input id="id_side" type="number" min="0" step="any">
+      <h2><em>A = s<sup>2</sup></em></h2>
+    </div>
+
+    <div id="id_inputs_rectangle" hidden>
+      <label for="id_length">Length</label>
+      <input id="id_length" type="number" min="0" step="any">
+      <label for="id_width">Width</label>
+      <input id="id_width" type="number" min="0" step="any">
+      <h2><em>A = lw</em></h2>
+    </div>
+
+    <input type="submit" value="Calculate Area">
+    <p id="id_output"></p>
+  </form>
+</body>
+</html>
