@@ -11,7 +11,7 @@ class App extends React.Component {
     render() {
         return (
             <div id='app'>
-              <Sidebar />
+              <Sidebar name="Dashboard" age="51" />
               <Reviews />
               <AverageRating />
               <SentimentAnalysis />
@@ -22,11 +22,11 @@ class App extends React.Component {
 }
 
 class Sidebar extends React.Component {
-  render() {
+  render() {console.log(this.props)
       return (
           <div className='sidebar'>
             <ul>
-              <li class="sidebar">Dashboard</li>
+              <li class="sidebar">{this.props.name} Hardcoded Dashboard</li>
               <li class="sidebar">Widget</li>
               <li class="sidebar">Reviews</li>
               <li class="sidebar">Customers</li>
