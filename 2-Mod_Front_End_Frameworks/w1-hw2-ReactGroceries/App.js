@@ -1,9 +1,12 @@
+// ReactGroceryList
+
 class App extends React.Component {
     state = {
         groceries,
         item: "",
         brand: "",
-        units: ""
+        units: "",
+        quantity: ""
     }
     itemChange = (event) => {
         this.setState({
@@ -17,7 +20,7 @@ class App extends React.Component {
             item: this.state.item,
             brand: this.state.brand,
             units: this.state.units,
-            quantity: 1,
+            quantity: this.state.quantity,
             isPurchased: false
         }
         this.setState({
@@ -32,20 +35,28 @@ class App extends React.Component {
     render() {
         return (<div>
             <form onSubmit={this.submit}>
-                <input id="item" onChange={this.itemChange} type='text' value={this.state.item}></input>
-                <input id="brand" onChange={this.itemChange} type='text' value={this.state.brand}></input>
-                <input id="units" onChange={this.itemChange} type='text' value={this.state.units}></input>
-                <button>submit me dammit</button>
-            </form>
+                <input id="item" onChange={this.itemChange} type='text' placeholder = "Item" value={this.state.item}></input>
+                <br/><br/>
+                <input id="brand" onChange={this.itemChange} type='text' placeholder = "Brand" value={this.state.brand}></input>
+                <br/><br/>
+                <input id="units" onChange={this.itemChange} type='text' placeholder = "Units" value={this.state.units}></input>
+                <br/><br/>
+                <input id="quantity" onChange={this.itemChange} type='text' placeholder = "Quantity" value={this.state.quantity}></input>
+                <br/><br/>
+                <button>Add to List</button>
+                <br/>
+            </form><br/>
             <div>
                 <ul>
                     {
                         this.state.groceries.map(
                             (grocery) => !grocery.isPurchased
                             ? <li>
-                                {grocery.item}</li>
-                            : "")
-                    }
+                                {grocery.item}
+                                <ul>{grocery.brand}</ul>
+                                <ul>{grocery.units}</ul>
+                                <ul>{grocery.quantity}</ul>
+                                </li> :"")}
                 </ul>
             </div>
         </div>)
@@ -57,7 +68,7 @@ const groceries = [
         brand: 'Sprite',
         units: '2 liters',
         quantity: 1,
-        isPurchased: false
+        isPurchased: true
     }, {
         item: 'Chips',
         brand: 'Pringles',
@@ -73,3 +84,7 @@ const groceries = [
     }
 ]
 ReactDOM.render(<App/>, document.querySelector('.container'))
+
+
+
+

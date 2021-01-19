@@ -1,3 +1,5 @@
+console.log("test")
+
 class App extends React.Component {
     state = {
       tardis: {
@@ -38,7 +40,8 @@ class App extends React.Component {
           return (<div >
               <DivTwo datta={this.props.datta}/>
           </div>
-      }
+          )
+        }
   }
 
   class DivTwo extends React.Component {
@@ -46,6 +49,7 @@ class App extends React.Component {
         return (<div >
             <DivThree datta={this.props.datta}/>
         </div>
+        )
       }
   }
 
@@ -54,6 +58,7 @@ class App extends React.Component {
         return (<div >
             <DivFour datta={this.props.datta}/>
         </div>
+        )
       }
   }
 
@@ -62,6 +67,7 @@ class App extends React.Component {
         return (<div>
             <h3>{this.props.datta}</h3>
         </div>
+        )
       }
   }
   
