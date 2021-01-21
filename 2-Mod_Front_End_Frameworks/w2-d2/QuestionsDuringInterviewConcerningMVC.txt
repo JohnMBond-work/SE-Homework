@@ -1,0 +1,14 @@
+Questions during an interview about React Routers:
+
+
+what is a react router
+What is MVC
+what does it do
+how do you use it
+show me your code
+how did you deploy your MVC
+what are you using to authenticate
+what are you using  for backend
+how are you validating
+what are you doing to test your application
+what have you worked with for testing
