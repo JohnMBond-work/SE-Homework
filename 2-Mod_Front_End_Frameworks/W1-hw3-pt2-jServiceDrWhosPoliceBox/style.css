@@ -1,19 +1,4 @@
 body{
     background-color: darkgray;
-}
-
-.Decrease{
-    color: magenta;
-}
-
-.Increase{
-    color: gray;
-}
-
-.Reset{
-    color: red;
-}
-
-h1{
-    align-items: center;
+    text-align: center;
 }

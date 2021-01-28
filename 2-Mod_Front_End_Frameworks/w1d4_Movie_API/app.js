@@ -29,10 +29,6 @@ class App extends React.Component {
                     }),
                     err => console.log(err) //  error incase query data is unavailable
                 })
-
-                
-
-
         })
     }
 //  This is the layout in pre-query state.
